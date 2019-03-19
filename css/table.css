@@ -1,0 +1,25 @@
+table {
+    border-color: blue;
+    border-style: solid;
+    border-width: 1px;
+    border-collapse: collapse;
+    width: 40%;
+}
+
+th,
+td {
+    border-style: outset;
+    border-width: 1px;
+    text-align: center;
+    padding: 5px;
+}
+
+th {
+    border-color: red;
+    background-color: black;
+    color: white;
+}
+
+td {
+    border-color: rebeccapurple;
+}
