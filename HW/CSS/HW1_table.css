@@ -1,0 +1,33 @@
+body {
+    -webkit-text-fill-color: #2e6909;
+}
+
+table {
+    border-collapse: separate;
+    -webkit-border-vertical-spacing: 5px;
+    -webkit-border-horizontal-spacing: 5px;
+    text-align: center;
+    width: 80%;
+}
+
+thead th {
+    height: 40px;
+    background-color: #5eb429;
+    -webkit-text-fill-color: white;
+}
+
+th {
+    background-color: rgb(228, 245, 182);
+    -webkit-text-fill-color: rgb(32, 114, 15)
+}
+
+td {
+    background-color: beige;
+    -webkit-text-fill-color: rgb(66, 138, 21);
+    height: 20px;
+}
+
+td:hover {
+    background-color: #6ac433;
+    -webkit-text-fill-color: white;
+}

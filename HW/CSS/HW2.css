@@ -1,0 +1,57 @@
+body {
+    background-color: #fffae4;
+}
+
+#content {
+    font-family: 'Noto Serif TC', serif;
+    width: 300px;
+    height: 500px;
+    font-weight: 400;
+    font-size: 19px;
+    padding: 50px;
+    color: #7a9eb1;
+    line-height: 20px;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 25px;
+    color: #3d80a2;
+    line-height: 30px;
+}
+
+.center {
+    margin: auto;
+}
+
+#box {
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px #00000040;
+    border-radius: 3%;
+}
+
+#icon {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-image: url("../IMG/IMG_4403.jpg");
+    background-size: contain;
+}
+
+.aaa {
+    font-weight: bold;
+    font-size: 15px;
+    flex: 1;
+    text-decoration: underline;
+    text-decoration-color: #e2d4a7;
+}
+
+.aaa+.aaa {
+    margin-left: 35px;
+}
+
+.aaa:hover {
+    color: #3d80a2;
+}
