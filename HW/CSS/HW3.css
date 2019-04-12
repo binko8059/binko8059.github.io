@@ -1,0 +1,109 @@
+#LOGO {
+    border: 2px;
+    background-color: rgb(179, 0, 0);
+    border-radius: 8%;
+    padding: 5px;
+    color: white;
+}
+
+.option li {
+    display: inline;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.option {
+    text-align: left;
+    vertical-align: middle;
+}
+
+.OP {
+    color: rgb(240, 80, 80);
+    text-align: right;
+    padding: 18px;
+}
+
+.OP:hover {
+    color: white;
+    background-color: rgb(179, 0, 0);
+    padding: 18px;
+    text-decoration: none;
+}
+
+.text {
+    margin: auto;
+    width: 75%;
+    height: auto;
+}
+
+.search {
+    border: none;
+    outline: none;
+}
+
+.submit {
+    color: rgb(179, 0, 0);
+    border-color: rgb(179, 0, 0);
+    background-color: #f8f9fa;
+    outline: none;
+}
+
+.submit:hover {
+    color: white;
+    border-color: rgb(179, 0, 0);
+    background-color: rgb(179, 0, 0);
+    outline: none;
+}
+
+.card {
+    box-shadow: 0px 0px 5px 0px #00000020;
+    border-radius: 4%;
+    text-align: center;
+}
+
+.card-title {
+    text-decoration: overline underline rgb(179, 0, 0);
+    margin: 10px;
+}
+
+.card-text {
+    color: rgba(0, 0, 0, 0.600);
+}
+
+h1 {
+    color: rgb(170, 0, 0);
+    margin: 20px;
+}
+
+.card-body:hover {
+    border-radius: 4%;
+    color: white;
+    background-color: rgb(179, 0, 0);
+}
+
+.card-body:hover .card-title {
+    color: white;
+    text-decoration: underline overline white;
+}
+
+.card-body:hover .buy {
+    color: rgb(179, 0, 0);
+    background-color: white;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+
+.card-body:hover .card-text {
+    color: white;
+}
+
+.card-body:hover h1 {
+    color: white;
+}
+
+.buy {
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(179, 0, 0);
+    margin-bottom: 30px;
+}
