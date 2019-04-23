@@ -60,7 +60,7 @@
     padding-top: 10px;
 }
 
-#icon {
+.icon {
     width: 70%;
     max-width: 200px;
     border-radius: 50%;
@@ -71,6 +71,21 @@
     margin-bottom: 30px;
     border-right: 3px solid rgb(115, 195, 195);
     border-left: 3px solid rgb(115, 195, 195);
+    padding: 5px;
+}
+
+.icon:hover {
+    width: 70%;
+    max-width: 200px;
+    border-radius: 50%;
+    border: white solid 4px;
+    display: inline-block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 5px;
+    border-top: 3px solid rgb(115, 195, 195);
+    border-bottom: 3px solid rgb(115, 195, 195);
 }
 
 .title1 {
@@ -95,10 +110,30 @@
     margin-bottom: 25px;
 }
 
+.col {
+    text-align: center;
+}
+
 .circle {
-    min-width: 40px;
-    min-height: 40px;
+    display: inline-block;
+    margin: auto;
+    width: 7px;
+    height: 7px;
     background-color: rgb(115, 195, 195);
+    border-radius: 50%;
+    animation: cir 4s infinite linear;
+}
+
+@keyframes cir {
+    0% {
+        background-color: rgb(115, 195, 195);
+    }
+    50% {
+        background-color: white
+    }
+    100% {
+        background-color: rgb(115, 195, 195);
+    }
 }
 
 .fa-caret-square-up {
