@@ -76,7 +76,7 @@
 
     <!-- 產品列表 -->
     <div id="content">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light " style=" background-color: white;" id="top">
             <a class="navbar-brand" href="#" style="color:rgb(255, 139, 50);font-size: 200%;">MI</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
@@ -122,7 +122,7 @@
                 </ul>
 
 
-                <a class="btn btn-outline-warning" role="button" href="./insert.html" target="_blank" title="新增商品">新增商品</a>
+                <a class="btn btn-outline-warning" role="button" href="./insert.html" target="_self" title="新增商品">新增商品</a>
 
             </div>
         </nav>
@@ -137,17 +137,14 @@
                 <p> 讓生活變得更簡單</p>
             </div>
             <div class="row" id="product-list">
-
-
-
-                <div class="col-*">
+                <div class="col-*" id="i">
                     <div class="item">
                         <img class="image" src="https://fakeimg.pl/160x160/" alt="" srcset="">
                         <h3 class="name">產品一</h3>
                         <p class="price">NT$ 999</p>
                     </div>
                 </div>
-                <div class="col-*">
+                <div class="col-* " id="i">
                     <div class="item">
                         <img class="image" src="https://fakeimg.pl/160x160/" alt="" srcset="">
                         <h3 class="name">產品二</h3>
@@ -175,10 +172,15 @@
                 </div>
             </div>
 
+            <div style="position:fixed; top: 90%; right: 2%;">
+                <a id=”share_up” href="#top" title="回頂端" alt="回頂端">
+                    <i class="far fa-arrow-alt-circle-up"></i>
+                </a>
+            </div>
 
-            <!-- 頁尾 -->
 
         </div>
+        <!-- 頁尾 -->
         <footer>
             <div class="text-center">
                 |　　2019　　|　　前端程式設計　　|　　LoChonIan　　|　　B07106031　　|
