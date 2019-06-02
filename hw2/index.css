@@ -108,7 +108,7 @@
                 background-origin: padding-box;
                 margin-bottom: 20px;
                 margin-left: 14px;
-                margin-right: 0px;
+                margin-right: 7px;
                 margin-top: 0px;
                 padding-top: 34px;
                 padding-bottom: 20px;
@@ -152,6 +152,7 @@
             }
             
             .btn-outline-warning:hover,
+            .btn-outline-warning:active,
             #insert {
                 color: white;
                 background-color: rgb(255, 145, 60);
