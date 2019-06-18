@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    var money = 2;
+    var money = 0;
     $('#pic').hide();
 
 
@@ -126,8 +126,9 @@ $(document).ready(function() {
         $('#story img').hide();
     });
 
-
-    document.getElementById("span").innerHTML = money;
+    $('#money').on("click", function() {
+        window.alert(money + "元");
+    });
 
 
 });
