@@ -117,8 +117,7 @@ $(document).ready(function() {
     }
 
     var change = () => {
-        $("#farmland1").off("click");
-        $("#farmland2").off("click");
+
         var c = Math.floor(Math.random() * 47) + 1;
         $('#ans img').attr('src', './ans/0' + c + '.png');
 
