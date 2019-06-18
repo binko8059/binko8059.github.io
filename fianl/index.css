@@ -1,0 +1,19 @@
+#cover {
+    position: relative;
+    background-image: url(./pic/cover.jpg);
+    width: 800px;
+    height: 450px;
+}
+
+#play {
+    position: absolute;
+    top: 325px;
+    left: 350px;
+    cursor: pointer;
+}
+
+.fa-play-circle {
+    color: rgb(255, 255, 255);
+    font-size: 600%;
+    cursor: pointer;
+}
