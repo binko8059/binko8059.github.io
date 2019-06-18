@@ -67,3 +67,16 @@
     width: 400px;
     background-color: rgba(255, 254, 247, 0.6);
 }
+
+#story {
+    position: absolute;
+    top: 30px;
+    left: 80px;
+    background-color: rgba(255, 254, 247, 0.6);
+    z-index: 10;
+}
+
+#story img {
+    height: 400px;
+    width: 620px;
+}

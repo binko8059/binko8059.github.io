@@ -1,7 +1,9 @@
 $(document).ready(function() {
 
-    var money = 0;
+    var money = 2;
     $('#pic').hide();
+
+
 
     $('#seed').on("click", function() {
         f = "no";
@@ -15,18 +17,6 @@ $(document).ready(function() {
         grow();
 
     });
-
-
-    // var land = () => {
-    //         for (i = 0; i < 2; i++) {
-    //             var grow0 = Math.floor(Math.random() * 2) + 1;
-    //             // console.log(grow0)
-    //             var img = $('#background .farmland').get(i)
-    //             var $bgf = $(img)
-    //             $bgf.attr('src', './pic/' + grow0 + '.png');
-
-    //         }
-    //     }
 
 
     var grow = () => {
@@ -45,11 +35,11 @@ $(document).ready(function() {
 
             $('#farmland1').attr('src', './pic/' + grow1 + '.png');
             $('#farmland2').attr('src', './pic/' + grow2 + '.png');
-            return delay(1000); // 延遲
+            return delay(2000); // 延遲
         }).then(function() {
             $('#farmland1').attr('src', './pic/' + grow1 + '_' + grow3 + '.png');
             $('#farmland2').attr('src', './pic/' + grow2 + '_' + grow4 + '.png');
-            return delay(2000); // 延遲
+            return delay(3000); // 延遲
         }).then(function() {
             $('#farmland1').attr('src', './pic/' + grow1 + '_' + grow3 + '_1.png');
             $('#farmland2').attr('src', './pic/' + grow2 + '_' + grow4 + '_1.png');
@@ -65,7 +55,7 @@ $(document).ready(function() {
             $('#farmland1').css('cursor', 'pointer');
             $('#farmland2').css('cursor', 'pointer');
 
-            $('#farmland1').on("click", function() {
+            $('#farmland1').one("click", function() {
                 console.log("click");
                 change();
                 $('#ans').css('display', 'block');
@@ -75,7 +65,7 @@ $(document).ready(function() {
                 f = "no";
             });
 
-            $('#farmland2').on("click", function() {
+            $('#farmland2').one("click", function() {
                 console.log("click");
                 change();
                 $('#ans').css('display', 'block');
@@ -97,7 +87,7 @@ $(document).ready(function() {
             console.log("click2");
             f = "no";
             $("#farmland1").off("click");
-            money = money + Math.floor(Math.random() * 5);
+            money = money + Math.floor(Math.random() * 5) + 1;
             $('#ans').css('display', 'none');
             console.log(money);
         });
@@ -119,13 +109,11 @@ $(document).ready(function() {
 
     var change = () => {
 
-        var c = Math.floor(Math.random() * 47) + 1;
+        var c = Math.floor(Math.random() * 48) + 1;
         $('#ans img').attr('src', './ans/0' + c + '.png');
 
 
     }
-
-
 
 
     $('#book').on("click", function() {
@@ -133,6 +121,13 @@ $(document).ready(function() {
 
     });
 
+    $('#story').on("click", function() {
+
+        $('#story img').hide();
+    });
+
+
+    document.getElementById("span").innerHTML = money;
 
 
 });
