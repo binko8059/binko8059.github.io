@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
     var money = 0;
+    $('#pic').hide();
 
     $('#seed').on("click", function() {
         f = "no";
@@ -44,11 +45,11 @@ $(document).ready(function() {
 
             $('#farmland1').attr('src', './pic/' + grow1 + '.png');
             $('#farmland2').attr('src', './pic/' + grow2 + '.png');
-            return delay(2000); // 延遲
+            return delay(1000); // 延遲
         }).then(function() {
             $('#farmland1').attr('src', './pic/' + grow1 + '_' + grow3 + '.png');
             $('#farmland2').attr('src', './pic/' + grow2 + '_' + grow4 + '.png');
-            return delay(3000); // 延遲
+            return delay(2000); // 延遲
         }).then(function() {
             $('#farmland1').attr('src', './pic/' + grow1 + '_' + grow3 + '_1.png');
             $('#farmland2').attr('src', './pic/' + grow2 + '_' + grow4 + '_1.png');
@@ -127,7 +128,10 @@ $(document).ready(function() {
 
 
 
+    $('#book').on("click", function() {
+        $('#pic').toggle();
 
+    });
 
 
 
